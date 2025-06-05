@@ -210,7 +210,7 @@ jobs:
         )
         # Define Defconfigs (relative to source root)
         # These will be merged into out/.config
-        DEFCONFIG="vendor/kona-perf_defconfig vendor/debugfs.config"
+        DEFCONFIGS="vendor/kona-perf_defconfig vendor/debugfs.config"
         # Generate .config file
         echo "Generating .config using '${DEFCONFIGS}'..."
         make "${MAKE_PARAMS[@]}" ${DEFCONFIGS}
